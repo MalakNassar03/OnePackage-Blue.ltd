@@ -1,0 +1,62 @@
+@import url("nav_style.scss");
+@import url("Slider.scss");
+@import url("About_style.scss");
+@import url("products.scss");
+@import url("News_Style.scss");
+@import url("Footer.scss");
+@import url("form_style.scss");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lazyLoad img{
+    width: 100%;
+    height: auto;
+}
+
+.lazyLoad {
+    background-image: url('../images/90-ring.svg');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: 40px;
+}
+//@font-face {
+//    font-family: 'Poppins';
+//    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+//    font-display: swap;
+//}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+body img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+:root {
+    --gray: gray;
+    --white: white;
+    --font14:14px;
+    --font18:18px;
+}
+
+
+
+
+
+

@@ -1,0 +1,328 @@
+
+.products_header{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 18px;
+}
+.our{
+    padding-right: 3px;
+    color: #007FC4;
+}
+[dir="rtl"] .our{
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    margin-left: -7px;
+}
+
+
+.products{
+    color: #6B6B6B;
+    display: flex;
+    flex: 1;
+}
+[dir="rtl"] .products{
+    margin: 0;
+    padding: 0;
+
+}
+
+.Category button{
+    height: 36px;
+    padding:0 15px;
+    background-color: var(--white);
+    border-style: solid;
+    border-color: #6B6B6B;
+    border-width: 2px;
+    margin-right: 11px;
+}
+.Category button:hover{
+    background-color: #007FC4;
+    border-style: solid;
+    border-color: #007FC4;
+    border-width: 2px;
+    color: var(--white);
+}
+.productsCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+.Cards img {
+    margin: auto;
+    height: 150px;
+}
+.Cards{
+    margin: 40px 0;
+    color: #F8F7F7;
+    box-shadow: inset 0 0 10px 1px rgba(107, 107, 107, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.bestSeller{
+    background-color: #F8C025;
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+    padding-top: 3px ;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 50%;
+
+}
+[dir="rtl"] .bestSeller{
+    padding-right: 0;
+    padding-left: 15px;
+
+}
+
+.bestSeller p{
+    font-size: 8px;
+    color: var(--white);
+    margin-left: 5px;
+    text-align: center;
+}
+.bestSeller::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid var(--white);
+    transform: translateY(-50%);
+}
+[dir="rtl"] .bestSeller::before{
+    top: 50%;
+    left: 0;
+    right: auto;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 0 ;
+
+    border-left: 13px solid var(--white);
+    transform: translatey(-50%);
+}
+.cardInfo {
+    color: black;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
+
+}
+
+.cName {
+    font-size: 10px;
+    color: #6B6B6B;
+    font-weight: lighter;
+    margin-top: 6px;
+}
+
+.pName {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.cardParagraph {
+    font-size: 10px;
+    color: #6B6B6B;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.cardButton {
+    width: 100%;
+    height: 45px;
+    color: #007FC4;
+    background-color: var(--white);
+    border-style: solid;
+    border-color: #6B6B6B;
+    border-width: 2px;
+    margin-top: 30px;
+}.Cards_popUp{
+     flex-direction: column;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%) scale(0);
+     display: flex;
+     background-color: white;
+     border-radius: 15px;
+     width: 400px;
+     height: auto;
+     max-width: 100%;
+     z-index: 99;
+ }
+.Cards_popUp.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card_nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #007FC4;
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+    padding: 15px;
+    color: var(--white);
+
+}
+.card_nav button{
+    color: var(--white);
+    background-color: #007FC4;
+    border: none;
+    width: 35px;
+    height: 35px;
+}
+.Cards_popUp .cardInfo{
+    background-color: transparent;
+}
+
+#shadow {
+    position: fixed;
+    opacity: 0;
+    transition: 10ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: 90;
+}
+#shadow.active{
+    opacity: 1;
+    pointer-events: all;
+
+
+}
+body .Cards_popUp.active {
+    overflow: hidden;
+}
+body #shadow.active {
+    overflow: hidden;
+}
+
+
+.cardButton:hover{
+    color: white;
+    background-color: #007FC4;
+    border-color: #007FC4;
+
+}
+
+/*************************************************MEDIA QUERIES**********************************************************/
+
+@media (max-width: 1100px) and (min-width: 740px)  {
+    .productsCards {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-template-rows: auto auto; /* Two rows */
+    }
+
+    .products_header {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+
+
+    .bestSeller p {
+        font-size: 10px;
+    }
+
+    .bestSeller {
+        padding: 4px 0;
+    }
+}
+
+@media (max-width: 740px) and (min-width: 650px) {
+    .productsCards {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-template-rows: auto auto; /* Two rows */
+    }
+
+    .products_header {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+
+
+    .bestSeller p {
+        font-size: 10px;
+    }
+
+    .bestSeller {
+        padding: 4px 0;
+    }
+
+    .Category button{
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 650px) and (min-width: 400px) {
+    .productsCards {
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+        grid-template-rows: auto auto; /* Two rows */
+    }
+
+    .products_header {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+
+
+    .bestSeller p {
+        font-size: 10px;
+    }
+
+    .bestSeller {
+        padding: 4px 0;
+    }
+
+    .Category button{
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .productsCards {
+        grid-template-columns: repeat(1, 1fr); /* Three columns */
+        grid-template-rows: auto auto; /* Two rows */
+    }
+
+    .products_header {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+
+
+    .bestSeller p {
+        font-size: 10px;
+    }
+
+    .bestSeller {
+        padding: 4px 0;
+    }
+
+    .Category button{
+        margin-bottom: 12px;
+    }
+}
+
+
+

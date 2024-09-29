@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>One package</title>
+    <meta name="description" content="onePackage.com - this is a one package website">
+    <meta name="robots" content="index, follow">
+
+
+
+    <!-- Owl Carousel -->
+<!--    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">-->
+<!--    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">-->
+
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/dist/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="fontello-a02aca29/css/fontello.css" as="style" onload="this.rel='stylesheet'">
+
+    <!-- Google Fonts: Preconnect and Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="font" onload="this.rel='stylesheet'">
+<!--    <noscript>-->
+<!--        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">-->
+<!--    </noscript>-->
+    <!-- Font Awesome  -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </noscript>
+
+</head>
+
+<body>
+
+<header class="nav_bar">
+    <div class="container">
+
+        <div class="items" role="navigation" aria-label="Primary Navigation">
+            <div class="logo">
+                <a href="index_or.html" target="_blank" aria-label="Return to the home page">
+                    <img  src="static/images/logo.png" alt="logo" width="148" height="59">
+                </a>
+            </div>
+
+            <ul class="side_nav" role="menubar">
+                <li onclick=closeSidebar() role="none">
+                    <button role="menuitem" >
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com" role="menuitem" >Home</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com" role="menuitem"  >About us</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com" role="menuitem">Products</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com" role="menuitem">News</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" role="menuitem">Gallery</a>
+                </li>
+                <li role="none">
+                    <a href="form.html" role="menuitem">Contact us</a>
+                </li>
+
+            </ul>
+            <ul class="nav" role="menu" aria-label="Main Menu">
+                <li role="none">
+                    <a href="https://www.facebook.com"  role="menuitem" >Home</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com"  role="menuitem">About us</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com"  role="menuitem">Products</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com"  role="menuitem">News</a>
+                </li>
+                <li role="none">
+                    <a href="https://www.facebook.com"  role="menuitem">Gallery</a>
+                </li>
+                <li role="none">
+                    <a  role="menuitem" href="form.html">Contact us</a>
+                </li>
+
+            </ul>
+
+
+            <ul class="icons">
+                <li>
+                    <a class="icon-facebook" href="https://www.facebook.com" aria-label="go to facebook account" title="Facebook" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="icon-twitter" href="https://www.facebook.com" aria-label="go to twitter account" title="twitter" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="icon-linkedin" href="https://www.facebook.com" aria-label="go to linkedin account" title="linkedin" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="icon-arabic" href="index_ar.html" aria-label="go to the arabic page" title="arabic page" target="_blank">Ar</a>
+                </li>
+                <li>
+                    <a class="icon-search-1" href="https://www.facebook.com" aria-label="search" title="search" target="_blank"></a>
+                </li>
+                <li  onclick=showSidebar()>
+                    <button class="nav_button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </div>
+</header>
+<div class="owl-carousel owl-theme">
+
+    <div class="slider-content lazyLoad" data-src="static/images/3333.png"   >
+<!--        <picture>-->
+<!--            <source data-srcset="static/images/3333.webp" type="image/webp">-->
+<!--            <img class="lazyLoad" data-src="static/images/3333.png" alt="Loading..." />-->
+<!--        </picture>-->
+<!--        <div>-->
+<!--            <img class="lazyLoad" src="static/images/90-ring.svg" alt="Loading..." />-->
+<!--        </div>-->
+<!--        <div class="spinner lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  alt="Loading..." ></div>-->
+
+        <!--        <div class="spinner-container">-->
+<!--            <img class="lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" alt="Loading..." />-->
+<!--        </div>-->
+
+        <div class="slider_">
+            <div class="container">
+            <h1 class="header_slider">Lorem Ipsum is simply Text1</h1>
+            <p class="paragraph_slider">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+            <button class="button_slider">Read More</button>
+        </div>
+    </div>
+    </div>
+    <div class="slider-content lazyLoad"  data-src="static/images/cleaning-products-blue-surface.jpg" >
+<!--            <img class="spinner lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" alt="Loading..." />-->
+
+<!--        <div class="spinner-wrapper"></div>-->
+
+        <div class="container">
+
+            <div class="slider_">
+
+            <h1 class="header_slider">Lorem Ipsum is simply Text2</h1>
+            <p class="paragraph_slider">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+            <button class="button_slider">Read More</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="slider-content lazyLoad "  data-src="static/images/top-view-circular-frame-with-cleaning-products.jpg">
+<!--            <img class="spinner lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" alt="Loading..." />-->
+<!--        <div class="spinner-wrapper"></div>-->
+
+        <div class="container">
+
+            <div class="slider_">
+
+            <h1 class="header_slider">Lorem Ipsum is simply Text3</h1>
+            <p class="paragraph_slider">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+            <button class="button_slider">Read More</button>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="about">
+    <div class="container">
+        <div class="about_info">
+            <div class="bordered_text">
+
+                <div class="about_header">
+                    <p class="small">About</p>
+                    <p class="big">One package</p>
+                </div>
+
+                <div class="test">
+
+
+                    <div class="about_paragraph">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="about_image">
+                <img class="lazyLoad" data-src="/static/images/about.png" width="428" height="385" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" loading="lazy" alt="about image">
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="products">
+    <div class="container">
+        <div class="products_header">
+            <p class="our"><strong>Our</strong> </p>
+            <p class="product">  <strong> products</strong> </p>
+        </div>
+        <div class="Category">
+            <button>All</button>
+            <button>Cleaning</button>
+            <button>Plastics</button>
+            <button>Machines</button>
+            <button>FoodStuffs</button>
+            <button>Paper</button>
+            <button>Cleaning Materials</button>
+        </div>
+        <div class="productsCards">
+            <div class="Cards">
+
+
+                <div>
+                    <div class="bestSeller">
+                        <p>Best Seller</p>
+                    </div>
+                    <img class="lazyLoad" width="248" height="150" data-src="static/images/bucket.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" loading="lazy" alt="bucket image">
+                </div>
+
+                <div class="cardInfo">
+                    <p class="cName">Category name</p>
+                    <p class="pName">Product name</p>
+                    <p class="cardParagraph">Lorem Ipsum is simply text of the printing and typesetting industry</p>
+                    <button data-modal-target="#modal" data-image="static/images/bucket.png" class="cardButton">Details</button>
+                </div>
+
+            </div>
+            <div class="Cards">
+
+                <div>
+                    <div class="bestSeller">
+                        <p>Best Seller</p>
+                    </div>
+                    <img class="lazyLoad" width="248" height="150" data-src="static/images/فوط%20غبرة.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" loading="lazy" alt="sponge image">
+                </div>
+                <div class="cardInfo">
+                    <p class="cName">Category name</p>
+                    <p
+                            class="pName">Product name</p>
+                    <p class="cardParagraph">Lorem Ipsum is simply text of the printing and typesetting industry</p>
+                    <button data-modal-target="#modal" data-image="static/images/فوط%20غبرة.png" class="cardButton" aria-label="details button">Details</button>
+                </div>
+            </div>
+
+            <div class="Cards">
+
+                <div>
+                    <div class="bestSeller">
+                        <p>Best Seller</p>
+                    </div>
+                    <img class="lazyLoad"   width="248" height="150" data-src="static/images/bucket.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  alt="bucket image" loading="lazy">
+                </div>
+                <div class="cardInfo">
+                    <p class="cName">Category name</p>
+                    <p class="pName">Product name</p>
+                    <p class="cardParagraph">Lorem Ipsum is simply text of the printing and typesetting industry</p>
+                    <button data-modal-target="#modal" data-image="static/images/bucket.png" aria-label="details button" class="cardButton">Details</button>
+                </div>
+            </div>
+            <div class="Cards">
+
+                <div>
+                    <div class="bestSeller">
+                        <p>Best Seller</p>
+                    </div>
+                    <img class="lazyLoad"  width="248" height="150" data-src="static/images/سطل.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  loading="lazy" alt="trash can image" >
+                </div>
+                <div class="cardInfo">
+                    <p class="cName">Category name</p>
+                    <p class="pName">Product name</p>
+                    <p class="cardParagraph">Lorem Ipsum is simply text of the printing and typesetting industry</p>
+                    <button data-modal-target="#modal" data-image="static/images/سطل.png" class="cardButton" aria-label="details button">Details</button>
+                </div>
+            </div>
+            <div class="Cards">
+
+                <div>
+                    <div class="bestSeller">
+                        <p>Best Seller</p>
+                    </div>
+                    <img  class="lazyLoad" width="248" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="   data-src="static/images/ليف%20جلي%20سلكة.png" loading="lazy" alt="harsh sponge image">
+                </div>
+                <div class="cardInfo">
+                    <p class="cName">Category name</p>
+                    <p class="pName">Product name</p>
+                    <p class="cardParagraph">Lorem Ipsum is simply text of the printing and typesetting industry</p>
+                    <button data-modal-target="#modal" data-image="static/images/ليف%20جلي%20سلكة.png" class="cardButton" aria-label="details button">Details</button>
+                </div>
+            </div>
+            <div class="Cards">
+                <div class="bestSeller">
+                    <p>Best Seller</p>
+                </div>
+                <div>
+                    <img class="lazyLoad"  width="248" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="   data-src="static/images/ليف%20جلي_1.png" loading="lazy" alt="sponge">
+                </div>
+                <div class="cardInfo">
+                    <p class="cName">Category name</p>
+                    <p class="pName">Product name</p>
+                    <p class="cardParagraph">Lorem Ipsum is simply text of the printing and typesetting industry</p>
+                    <button data-modal-target="#modal" data-image="static/images/ليف%20جلي_1.png" class="cardButton" aria-label="details button">Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--*************************************************-->
+<div class="Cards_popUp" id="modal">
+    <nav class="card_nav">
+        <p class="pName">Product name</p>
+        <button data-close-button class="close_button" aria-label="close button">
+            <i class="fa-solid fa-x"></i>
+        </button>
+    </nav>
+
+    <div>
+        <img id="modal-img" src="" alt="Product Image" loading="lazy">
+    </div>
+    <div class="cardInfo">
+        <p class="cName">Category name</p>
+        <p class="cardParagraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+        <button class="cardButton" aria-label="add to cart button">Add To Cart</button>
+    </div>
+</div>
+<div id="shadow" class="shadow"></div>
+
+<!--*************************************************-->
+
+<div class="News">
+    <div class="container">
+        <div class="newsHeader">
+            <p class="Latest">Latest</p>
+            <p class="NewsP">News</p>
+        </div>
+        <div class="NewsCards">
+            <div class="newsCard1">
+                <img class="lazyLoad"  width="385" height="280"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  data-src="static/images/Mask%20Group.png" loading="lazy" alt="news">
+                <div class="cardPara">
+                    <div class="date">
+                        <img src="static/images/Group%203487.png" width="10" height="10" loading="lazy" alt="a clock image">
+                        <p>25 may, 2021</p>
+                    </div>
+                    <p class="newsPara">News title here</p>
+
+                </div>
+            </div>
+            <div class="newsCard2">
+                <img class="lazyLoad"  width="385" height="280" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  data-src="static/images/Mask%20Group%201.png" loading="lazy" alt="news">
+                <div class="cardPara">
+                    <div class="date">
+                        <img src="static/images/Group%203487.png" width="10" height="10" loading="lazy" alt="clock image">
+                        <p>25 may, 2021</p>
+                    </div>
+                    <p class="newsPara">News title here</p>
+
+                </div>
+            </div>
+            <div class="newsCard3">
+                <img class="lazyLoad"  width="385" height="280" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  data-src="static/images/Mask%20Group%202.png" loading="lazy" alt="news">
+                <div class="cardPara">
+                    <div class="date">
+                        <img src="static/images/Group%203487.png" width="10" height="10" loading="lazy" alt="clock image">
+                        <p>25 may, 2021</p>
+                    </div>
+                    <p class="newsPara">News title here</p>
+
+                </div>
+            </div>
+            <div class="newsCard4">
+                <img class="lazyLoad"  width="385" height="280" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" data-src="static/images/Mask%20Group%203.png" loading="lazy" alt="news">
+                <div class="cardPara">
+                    <div class="date">
+                        <img src="static/images/Group%203487.png" width="10" height="10" loading="lazy" alt="clock image">
+                        <p>25 may, 2021</p>
+                    </div>
+                    <p class="newsPara">News title here</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="FooterSlider">
+    <div class="image-container">
+        <img class="lazyLoad img1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" width="278" height="200"  data-src="static/images/80.png" alt="Image" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <p>Lorem Ipsum is simply dummy text</p>
+                <img src="static/images/Path%209.png" width="30" height="30" loading="lazy" alt="a search icon">
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  width="278" height="200"  data-src="static/images/81.png" alt="Image" loading="lazy" >
+        <div class="overlay">
+            <div class="text">
+                <p>Lorem Ipsum is simply dummy text</p>
+                <img src="static/images/Path%209.png" width="30" height="30" loading="lazy" alt="a search icon">
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  width="278" height="200"   data-src="static/images/82.png" alt="Image" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <p>Lorem Ipsum is simply dummy text</p>
+                <img src="static/images/Path%209.png" width="30" height="30" loading="lazy" alt="a search icon">
+            </div>        </div>
+    </div>
+    <div class="image-container">
+        <img class="lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  width="278" height="200"   data-src="static/images/83.png" alt="Image" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <p>Lorem Ipsum is simply dummy text</p>
+                <img src="static/images/Path%209.png" width="30" height="30" loading="lazy" alt="a search icon">
+            </div>        </div>
+    </div>
+    <div class="image-container">
+        <img class="lazyLoad" data-src="static/images/84.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  width="278" height="200"  alt="Image" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <p>Lorem Ipsum is simply dummy text</p>
+                <img src="static/images/Path%209.png" width="30" height="30" loading="lazy" alt="a search icon">
+            </div>        </div>
+    </div>
+    <div class="image-container">
+        <img class="lazyLoad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  width="278" height="200"    data-src="static/images/85.png" alt="Image" loading="lazy">
+        <div class="overlay">
+            <div class="text">
+                <p>Lorem Ipsum is simply dummy text</p>
+                <img src="static/images/Path%209.png" width="30" height="30" loading="lazy" alt="a search icon">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="companies">
+    <div class="container">
+        <div class="companies">
+            <div>
+                <img class="lazyLoad" width="174px" height="110px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg==" data-src="static/images/Image%206.png" loading="lazy" alt="company logo">
+            </div>
+            <div>
+                <img   class="lazyLoad" width="174px" height="110px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="   data-src="static/images/Image%207.png" loading="lazy" alt="company logo">
+            </div>
+            <div>
+                <img   class="lazyLoad" width="174px" height="110px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  data-src="static/images/Image%208.png" loading="lazy" alt="company logo">
+            </div>
+            <div>
+                <img  class="lazyLoad" width="174px" height="110px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  data-src="static/images/Image%209.png" loading="lazy" alt="company logo">
+            </div>
+            <div>
+                <img  class="lazyLoad" width="174px" height="110px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89+BBPQAIYQMfSCyRUgAAAABJRU5ErkJggg=="  data-src="static/images/Image%2010.png" loading="lazy" alt="company logo">
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="Footer_nav">
+    <div class="container">
+
+        <div class="items">
+
+            <ul class="nav">
+                <li>
+                    <img class=" logo" src="static/images/logo.png" alt="logo" loading="lazy" width="148" height="59">
+                </li>
+                <li>
+                    <a href="form.html">Home</a>
+                </li>
+                <li>
+                    <a href="form.html">About us</a>
+                </li>
+                <li>
+                    <a href="form.html">Products</a>
+                </li>
+                <li>
+                    <a href="form.html">News</a>
+                </li>
+                <li>
+                    <a href="form.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="form.html">Contact us</a>
+                </li>
+
+            </ul>
+
+
+            <ul class="icons">
+                <li>
+                    <a class="icon-facebook" href="" aria-label="go to facebook account"></a>
+                </li>
+                <li>
+                    <a class="icon-twitter" href="" aria-label="go to twitter account"></a>
+                </li>
+                <li>
+                    <a class="icon-linkedin" href="" aria-label="go to linkedin account"></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</footer>
+<!--&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>&ndash;&gt;-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
+<!--&lt;!&ndash;plugin&ndash;&gt;-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>-->
+
+<!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+<!--<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>-->
+<script  src="dist/main.js" defer ></script>
+<!--<script src="static/JavaScript/slider_plugin.js"></script>-->
+<!--<script src="static/JavaScript/pop_up.js"></script>-->
+<!--<script src="static/JavaScript/Side_Nav.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,143 @@
+.News{
+    background-color: #F8F7F7;
+    padding-bottom: 89px;
+}
+
+
+.NewsCards{
+    display: flex;
+    flex: 1;
+    gap: 34px;
+}
+.newsCard1, .newsCard2, .newsCard3, .newsCard4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.Latest{
+    font-size: 30px;
+    color: #007FC4;
+    font-weight: bold;
+    padding-right: 10px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+[dir="rtl"] .Latest{
+    padding-right: 0;
+    padding-left: 15px;
+}
+.NewsP{
+    font-size: 30px;
+    color: #6B6B6B;
+    font-weight: bold;
+    margin-top: 90px;
+    margin-bottom: 15px;
+
+}
+.cardPara{
+    display: flex;
+flex-direction: column;
+
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 15px;
+}
+.date img{
+    width:10px;
+    height:10px;
+
+}
+.date p{
+    font-size: 12px;
+    padding-left: 9px;
+    color: #6B6B6B;
+}
+[dir="rtl"] .date p{
+    padding-right: 9px;
+    padding-left: 0;
+}
+.newsPara{
+    font-size: 16px;
+    color: #6B6B6B;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+
+/*************************************************MEDIA QUERIES**********************************************************/
+
+@media (max-width: 1000px)  and (min-width: 920px) {
+
+
+    .NewsP{
+        font-size: 25px;
+        margin-top: 60px;
+
+    }
+    .Latest{
+        font-size: 25px;
+        margin-top: 60px;
+
+    }
+
+}
+
+
+@media (max-width: 919px)  and (min-width: 512px){
+    .NewsCards {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        gap: 34px;
+    }
+
+    .newsCard1, .newsCard2, .newsCard3, .newsCard4 {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(50% - 17px);
+    }
+
+    .newsCard3, .newsCard4 {
+        margin-top: 34px;
+    }
+    .Latest , .NewsP{
+        font-size: 25px;
+    }
+
+}
+
+
+@media (max-width: 512px)  {
+    .NewsCards {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        gap: 34px;
+    }
+
+    .newsCard1, .newsCard2, .newsCard3, .newsCard4 {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%; /* Make each card take 100% of the row */
+    }
+
+    .newsCard3, .newsCard4 {
+        margin-top: 34px;
+    }
+    .Latest , .NewsP{
+        font-size: 25px;
+    }
+
+}
+
+
+
+

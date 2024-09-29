@@ -1,0 +1,13 @@
+User-agent: *
+Disallow:
+Disallow: /blue/static/
+Disallow: /blue/dist/
+Disallow: /blue/index_ar.html
+Disallow: /blue/index_or.html
+Disallow: /blue/tiny_slider.html
+Disallow:/blue/node_modules
+Disallow:/blue/webpack.dev.js
+
+
+
+
